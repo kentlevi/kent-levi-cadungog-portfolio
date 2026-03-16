@@ -712,6 +712,66 @@ body.light .skills-img::after {
   transform: scale(1.03);
 }
 
+.work-img--summary {
+  display: grid;
+  place-items: stretch;
+  min-height: 100%;
+  padding: 0;
+  background:
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.08), transparent 28%),
+    linear-gradient(145deg, rgba(196, 34, 61, 0.9), rgba(124, 25, 39, 0.96));
+}
+
+.work-img--summary::after {
+  background: linear-gradient(180deg, rgba(9, 17, 26, 0.08), rgba(9, 17, 26, 0.28));
+}
+
+.work-img--summary-alt {
+  background:
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.12), transparent 30%),
+    linear-gradient(145deg, rgba(9, 128, 115, 0.94), rgba(14, 49, 72, 0.96));
+}
+
+.work-summary {
+  display: grid;
+  align-content: center;
+  gap: 14px;
+  padding: 28px;
+  color: #fff7f7;
+}
+
+.work-summary__label {
+  display: inline-flex;
+  width: fit-content;
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.work-summary strong {
+  font-size: clamp(2.1rem, 4vw, 3.4rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+
+.work-summary p {
+  margin: 0;
+  max-width: 28ch;
+  color: rgba(255, 247, 247, 0.84);
+}
+
+.work-summary__list {
+  display: grid;
+  gap: 10px;
+  margin: 4px 0 0;
+  padding-left: 18px;
+  color: rgba(255, 247, 247, 0.96);
+}
+
 .skill-groups {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
