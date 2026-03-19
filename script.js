@@ -8,6 +8,9 @@ const yearEl = document.querySelector(".footer-text span");
 const interactiveCards = document.querySelectorAll(
   ".timeline-card, .skill-card, .work-box, .profile-card, .project-card, .hero-metrics li, .skills-img"
 );
+const projectCarousel = document.querySelector(".project-grid");
+const projectCarouselPrev = document.querySelector('[data-carousel="prev"]');
+const projectCarouselNext = document.querySelector('[data-carousel="next"]');
 
 function toggleNav(forceClose = false) {
   const shouldClose = forceClose || !nav.classList.contains("hidden");
@@ -79,5 +82,71 @@ interactiveCards.forEach((card) => {
     card.style.setProperty("--cursor-y", `${y}px`);
   });
 });
+
+if (projectCarousel && projectCarouselPrev && projectCarouselNext) {
+  let autoScrollTimer = null;
+
+  const getCarouselMetrics = () => {
+    const firstCard = projectCarousel.querySelector(".project-card");
+    if (!firstCard) {
+      return null;
+    }
+
+    const gap = 18;
+    const cardWidth = firstCard.getBoundingClientRect().width + gap;
+    const cardCount = projectCarousel.querySelectorAll(".project-card").length;
+    const maxIndex = Math.max(0, cardCount - 1);
+    const currentIndex = Math.round(projectCarousel.scrollLeft / cardWidth);
+
+    return { cardWidth, maxIndex, currentIndex };
+  };
+
+  const scrollProjects = (direction) => {
+    const metrics = getCarouselMetrics();
+    if (!metrics) {
+      return;
+    }
+
+    const { cardWidth, maxIndex, currentIndex } = metrics;
+    let nextIndex = currentIndex + direction;
+
+    if (nextIndex > maxIndex) {
+      nextIndex = 0;
+    }
+
+    if (nextIndex < 0) {
+      nextIndex = maxIndex;
+    }
+
+    projectCarousel.scrollTo({
+      left: cardWidth * nextIndex,
+      behavior: "smooth",
+    });
+  };
+
+  const startAutoScroll = () => {
+    clearInterval(autoScrollTimer);
+    autoScrollTimer = setInterval(() => {
+      scrollProjects(1);
+    }, 4200);
+  };
+
+  const stopAutoScroll = () => {
+    clearInterval(autoScrollTimer);
+  };
+
+  projectCarouselPrev.addEventListener("click", () => scrollProjects(-1));
+  projectCarouselNext.addEventListener("click", () => scrollProjects(1));
+  projectCarousel.addEventListener("mouseenter", stopAutoScroll);
+  projectCarousel.addEventListener("mouseleave", startAutoScroll);
+  projectCarousel.addEventListener("focusin", stopAutoScroll);
+  projectCarousel.addEventListener("focusout", startAutoScroll);
+  projectCarouselPrev.addEventListener("mouseenter", stopAutoScroll);
+  projectCarouselPrev.addEventListener("mouseleave", startAutoScroll);
+  projectCarouselNext.addEventListener("mouseenter", stopAutoScroll);
+  projectCarouselNext.addEventListener("mouseleave", startAutoScroll);
+
+  startAutoScroll();
+}
 
 yearEl.textContent = new Date().getFullYear();

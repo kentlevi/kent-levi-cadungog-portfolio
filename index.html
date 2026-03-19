@@ -1,621 +1,671 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
-    <meta
-      name="description"
-      content="Kent Levi Cadungog is a frontend-focused software developer building SEO-optimized, high-performance web applications with Vue.js, Nuxt.js, React, and modern UI engineering."
-    />
-    <meta itemprop="name" content="Kent Levi Cadungog | Frontend Developer" />
-    <meta
-      itemprop="description"
-      content="Frontend-focused software developer with 4+ years of experience building responsive, accessible, and performance-driven web applications."
-    />
-    <meta itemprop="image" content="assets/images/hero-bg-light.webp" />
-    <meta property="og:url" content="https://kent-levi-cadungog-porfolio.netlify.app" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Kent Levi Cadungog | Frontend Developer" />
-    <meta
-      property="og:description"
-      content="Frontend-focused software developer with 4+ years of experience building SEO-optimized web applications and responsive UI systems."
-    />
-    <meta property="og:image" content="assets/images/hero-bg-light.webp" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Kent Levi Cadungog | Frontend Developer" />
-    <meta
-      name="twitter:description"
-      content="Frontend-focused software developer with 4+ years of experience building high-performance, SEO-optimized web applications."
-    />
-    <meta name="twitter:image" content="assets/images/hero-bg-light.webp" />
-    <link rel="shortcut icon" href="assets/images/favicon.jpg" type="image/png" />
-    <link
-      rel="preload"
-      href="assets/fonts/Mona-Sans.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-    <title>Kent Levi Cadungog | Frontend Developer</title>
-  </head>
-  <body>
-    <script>
-      const theme = localStorage.getItem("theme") || "dark";
-      document.body.classList.add(theme);
-    </script>
 
-    <header class="site-header">
-      <div class="container nav-shell">
-        <a class="brand" href="#top">Kent Levi Cadungog</a>
-        <button type="button" class="menu-btn" aria-expanded="false" aria-controls="site-nav">
-          Menu
-        </button>
-        <nav class="nav hidden" id="site-nav">
-          <ol class="nav-items">
-            <li class="nav-item"><a href="#about">About</a></li>
-            <li class="nav-item"><a href="#experience">Experience</a></li>
-            <li class="nav-item"><a href="#work">Work</a></li>
-            <li class="nav-item"><a href="#skills">Skills</a></li>
-            <li class="nav-item"><a href="#contact" data-focused="last-focused">Contact</a></li>
-          </ol>
-        </nav>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description"
+    content="Kent Levi Cadungog is a frontend-focused software developer building SEO-optimized, high-performance web applications with Vue.js, Nuxt.js, React, and modern UI engineering." />
+  <meta itemprop="name" content="Kent Levi Cadungog | Frontend Developer" />
+  <meta itemprop="description"
+    content="Frontend-focused software developer with 4+ years of experience building responsive, accessible, and performance-driven web applications." />
+  <meta itemprop="image" content="assets/images/hero-bg-light.webp" />
+  <meta property="og:url" content="https://kent-levi-cadungog-porfolio.netlify.app" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kent Levi Cadungog | Frontend Developer" />
+  <meta property="og:description"
+    content="Frontend-focused software developer with 4+ years of experience building SEO-optimized web applications and responsive UI systems." />
+  <meta property="og:image" content="assets/images/hero-bg-light.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kent Levi Cadungog | Frontend Developer" />
+  <meta name="twitter:description"
+    content="Frontend-focused software developer with 4+ years of experience building high-performance, SEO-optimized web applications." />
+  <meta name="twitter:image" content="assets/images/hero-bg-light.webp" />
+  <link rel="icon" href="assets/images/brand/logo.png" type="image/png" />
+  <link rel="shortcut icon" href="assets/images/brand/logo.png" type="image/png" />
+  <link rel="preload" href="assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <title>Kent Levi Cadungog | Frontend Developer</title>
+</head>
 
-    <main id="top">
-      <section class="hero section">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">Frontend Developer</p>
-            <p class="hero-intro">Kent Levi Cadungog</p>
-            <h1 class="h1">Performance-driven interfaces built for search, speed, and usability.</h1>
-            <p class="hero-text">
-              I am Kent Levi Cadungog, a frontend-focused software developer in Cebu City with 4+ years of experience building SEO-optimized web applications, responsive UI systems, and conversion-focused digital experiences.
-            </p>
-            <div class="hero-actions">
-              <a href="#contact" class="btn btn-cta">Let's Work</a>
-              <a href="#work" class="btn btn-secondary">View Projects</a>
-            </div>
-            <div class="hero-strip">
-              <span>Vue.js</span>
-              <span>Nuxt.js</span>
-              <span>React</span>
-              <span>SEO</span>
-              <span>Core Web Vitals</span>
-            </div>
-            <ul class="hero-metrics" aria-label="Career summary">
-              <li>
-                <strong>4+</strong>
-                <span>Years building web products</span>
-              </li>
-              <li>
-                <strong>Vue / Nuxt</strong>
-                <span>SEO-driven production work</span>
-              </li>
-              <li>
-                <strong>React</strong>
-                <span>Component-based frontend delivery</span>
-              </li>
+<body>
+  <script>
+    const theme = localStorage.getItem("theme") || "dark";
+    document.body.classList.add(theme);
+  </script>
+
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="#top" aria-label="Kent Levi.dev home">
+        <img class="brand-logo" src="assets/images/brand/logo.png" alt="Kent Levi dot dev" />
+        <span class="brand-wordmark" aria-hidden="true">
+          <span class="brand-wordmark-main">Kent Levi</span><span class="brand-wordmark-dot">.</span><span class="brand-wordmark-dev">dev</span>
+        </span>
+      </a>
+      <button type="button" class="menu-btn" aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
+      <nav class="nav hidden" id="site-nav">
+        <ol class="nav-items">
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#experience">Experience</a></li>
+          <li class="nav-item"><a href="#work">Work</a></li>
+          <li class="nav-item"><a href="#skills">Skills</a></li>
+          <li class="nav-item"><a href="#contact" data-focused="last-focused">Contact</a></li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Frontend Developer</p>
+          <p class="hero-intro">Kent Levi Cadungog</p>
+          <h1 class="h1">Performance-driven interfaces built for search, speed, and usability.</h1>
+          <p class="hero-text">
+            I am Kent Levi Cadungog, a frontend-focused software developer in Cebu City with 4+ years of experience
+            building SEO-optimized web applications, responsive UI systems, and conversion-focused digital experiences.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-cta">Let's Work</a>
+            <a href="#work" class="btn btn-secondary">View Projects</a>
+          </div>
+          <div class="hero-strip">
+            <span>Vue.js</span>
+            <span>Nuxt.js</span>
+            <span>React</span>
+            <span>SEO</span>
+            <span>Core Web Vitals</span>
+          </div>
+          <ul class="hero-metrics" aria-label="Career summary">
+            <li>
+              <strong>4+</strong>
+              <span>Years building web products</span>
+            </li>
+            <li>
+              <strong>Vue / Nuxt</strong>
+              <span>SEO-driven production work</span>
+            </li>
+            <li>
+              <strong>React</strong>
+              <span>Component-based frontend delivery</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-panel">
+          <div class="profile-card">
+            <p class="profile-card__label">Current Role</p>
+            <h2>Frontend Developer</h2>
+            <p>Glophics Web Design &amp; Advertising</p>
+            <ul class="profile-list">
+              <li>Cebu City, Philippines</li>
+              <li>On-site</li>
+              <li>SEO, Core Web Vitals, responsive UI</li>
             </ul>
           </div>
 
-          <aside class="hero-panel">
-            <div class="profile-card">
-              <p class="profile-card__label">Current Role</p>
-              <h2>Frontend Developer</h2>
-              <p>Glophics Web Design &amp; Advertising</p>
-              <ul class="profile-list">
-                <li>Cebu City, Philippines</li>
-                <li>On-site</li>
-                <li>SEO, Core Web Vitals, responsive UI</li>
-              </ul>
-            </div>
-
-            <div class="profile-card profile-card--accent">
-              <p class="profile-card__label">Core Focus</p>
-              <p>
-                Frontend engineering for accessible, responsive, search-friendly experiences with Vue.js, Nuxt.js, React, REST APIs, and performance optimization.
-              </p>
-            </div>
-
-            <div class="profile-card profile-card--compact">
-              <p class="profile-card__label">Strengths</p>
-              <div class="profile-tags">
-                <span>Responsive UI</span>
-                <span>Accessibility</span>
-                <span>REST APIs</span>
-                <span>Performance</span>
-              </div>
-            </div>
-          </aside>
-        </div>
-      </section>
-
-      <section class="section section--tight" id="about">
-        <div class="container section-grid">
-          <div>
-            <p class="eyebrow">Profile</p>
-            <h2 class="h2 h2--left">Frontend Developer | Software Developer</h2>
-          </div>
-          <div class="prose">
+          <div class="profile-card profile-card--accent">
+            <p class="profile-card__label">Core Focus</p>
             <p>
-              Frontend-focused Software Developer with 4+ years of experience building high-performance, SEO-optimized web applications. Strong expertise in Vue.js, Nuxt.js, and React, with hands-on experience integrating RESTful APIs and optimizing Core Web Vitals including LCP, CLS, and INP.
-            </p>
-            <p>
-              I focus on accessible, responsive UI development with a pragmatic engineering mindset. My work spans marketing sites, e-commerce, scheduling platforms, and internal product interfaces where speed, maintainability, and visibility all matter.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="experience">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Career Timeline</p>
-            <h2 class="h2 h2--left">Professional Experience</h2>
-          </div>
-
-          <div class="timeline">
-            <article class="timeline-item reveal">
-              <div class="timeline-meta">
-                <p>Apr 2025 - Present</p>
-                <span>Cebu City, Philippines</span>
-              </div>
-              <div class="timeline-card">
-                <h3 class="h3">Frontend Developer</h3>
-                <p class="timeline-company">Glophics Web Design &amp; Advertising Inc.</p>
-                <ul class="timeline-points">
-                  <li>Built and maintained SEO-driven Vue.js and Nuxt.js applications.</li>
-                  <li>Maintained and updated a network of seven regional sticker printing storefronts with shared frontend patterns, campaign banners, and localized content.</li>
-                  <li>Led frontend development from scratch for a new multilingual sticker commerce platform, rebuilding the experience on an upgraded stack while supporting English and Korean launches.</li>
-                  <li>Improved Core Web Vitals, reducing load time and improving UX consistency.</li>
-                  <li>Developed responsive, accessible UI components across devices.</li>
-                  <li>Implemented dynamic filtering systems and managed SEO metadata.</li>
-                  <li>Worked with stakeholders to deliver conversion-focused interfaces.</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="timeline-item reveal">
-              <div class="timeline-meta">
-                <p>Jan 2023 - Apr 2025</p>
-                <span>Cebu, Philippines - Remote</span>
-              </div>
-              <div class="timeline-card">
-                <h3 class="h3">Frontend Developer</h3>
-                <p class="timeline-company">Dinnox IT Solutions</p>
-                <ul class="timeline-points">
-                  <li>Developed and optimized high-performance frontend interfaces.</li>
-                  <li>Integrated RESTful APIs with backend services.</li>
-                  <li>Improved code maintainability using modern frontend practices.</li>
-                  <li>Enhanced accessibility, responsiveness, and UI consistency.</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="timeline-item reveal">
-              <div class="timeline-meta">
-                <p>Nov 2021 - Jan 2023</p>
-                <span>Australia - Remote</span>
-              </div>
-              <div class="timeline-card">
-                <h3 class="h3">Software Developer</h3>
-                <p class="timeline-company">The Little Ripple Company Pty Ltd</p>
-                <ul class="timeline-points">
-                  <li>Developed software solutions for e-commerce, scheduling, and automation.</li>
-                  <li>Improved platform stability through testing and debugging.</li>
-                  <li>Assisted in designing scalable and maintainable system architectures.</li>
-                  <li>Supported customized websites and landing pages that improved user engagement.</li>
-                </ul>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="work">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Selected Work</p>
-            <h2 class="h2 h2--left">Projects and Product Work</h2>
-            <p class="section-lead">
-              A mix of production websites and product-focused builds where I worked on interface quality, responsive implementation, and experience-driven delivery.
+              Frontend engineering for accessible, responsive, search-friendly experiences with Vue.js, Nuxt.js, React,
+              REST APIs, and performance optimization.
             </p>
           </div>
 
-          <div class="work-boxes">
-            <article class="work-box reveal">
-              <div class="work-textbox">
-                <p class="work-kicker">Ongoing Product Build</p>
-                <h3 class="h3">Musticker US</h3>
-                <p class="work-text">
-                  A new sticker commerce platform currently in production, where I am building the frontend from scratch as the primary frontend developer. The project modernizes the older sticker storefront pattern with an upgraded stack, cleaner component structure, and multilingual support currently focused on English and Korean.
-                </p>
-                <ol class="work-technologies">
-                  <li>Vue.js</li>
-                  <li>Nuxt.js</li>
-                  <li>Multilingual UI</li>
-                  <li>Frontend Architecture</li>
-                </ol>
-                <div class="work-links">
-                  <a href="https://musticker.com/us" target="_blank" rel="noopener" class="link">Project Link</a>
-                </div>
-              </div>
-              <div class="work-img work-img--summary work-img--summary-alt" aria-label="Musticker US project summary">
-                <div class="work-summary">
-                  <span class="work-summary__label">From Scratch Build</span>
-                  <strong>EN + KR</strong>
-                  <p>New multilingual storefront architecture built on an upgraded frontend stack and still actively in production.</p>
-                  <ul class="work-summary__list">
-                    <li>Main frontend developer</li>
-                    <li>Modernized sticker storefront foundation</li>
-                    <li>English and Korean rollout in progress</li>
-                  </ul>
-                </div>
-              </div>
-            </article>
-
-            <article class="work-box reveal">
-              <div class="work-textbox">
-                <p class="work-kicker">Multi-market E-commerce Maintenance</p>
-                <h3 class="h3">Sticker Printing Storefront Network</h3>
-                <p class="work-text">
-                  An ongoing maintenance and frontend support role across seven related sticker printing storefronts, where I handle campaign updates, banner rollouts, responsive fixes, merchandising UI, and consistency across localized market sites.
-                </p>
-                <ol class="work-technologies">
-                  <li>Vue.js</li>
-                  <li>Nuxt.js</li>
-                  <li>SEO Metadata</li>
-                  <li>Maintenance</li>
-                </ol>
-                <div class="work-links">
-                  <a href="https://www.allstickerprinting.com/" target="_blank" rel="noopener" class="link">All Sticker Printing</a>
-                  <a href="https://www.ozstickerprinting.com/" target="_blank" rel="noopener" class="link">OZ Sticker Printing</a>
-                  <a href="https://www.stickerdot.co.nz/" target="_blank" rel="noopener" class="link">StickerDot NZ</a>
-                  <a href="https://www.stickermarket.co.uk/" target="_blank" rel="noopener" class="link">Sticker Market UK</a>
-                  <a href="https://www.stickercanada.com/" target="_blank" rel="noopener" class="link">Sticker Canada</a>
-                  <a href="https://www.singaprinting.com/" target="_blank" rel="noopener" class="link">Singa Printing</a>
-                  <a href="https://www.stickerjapan.com/" target="_blank" rel="noopener" class="link">Sticker Japan</a>
-                </div>
-              </div>
-              <div class="work-img work-img--summary" aria-label="Sticker storefront network summary">
-                <div class="work-summary">
-                  <span class="work-summary__label">Current Product Group</span>
-                  <strong>7 live storefronts</strong>
-                  <p>Regional sticker printing sites maintained under one frontend support workflow.</p>
-                  <ul class="work-summary__list">
-                    <li>Promotional banners and site updates</li>
-                    <li>Localized storefront consistency</li>
-                    <li>SEO-aware frontend maintenance</li>
-                  </ul>
-                </div>
-              </div>
-            </article>
-
-            <article class="work-box reveal">
-              <div class="work-textbox">
-                <p class="work-kicker">Digital Learning Platform</p>
-                <h3 class="h3">Kabrita</h3>
-                <p class="work-text">
-                  A digital learning platform built to support remote education through structured online content, course access, and interactive resources.
-                </p>
-                <ol class="work-technologies">
-                  <li>Bootstrap</li>
-                  <li>Python</li>
-                  <li>Django</li>
-                </ol>
-              </div>
-              <picture class="work-img">
-                <img loading="lazy" src="assets/images/works/kabrita.png" alt="Kabrita website preview" />
-              </picture>
-            </article>
-
-            <article class="work-box reveal">
-              <div class="work-textbox">
-                <p class="work-kicker">Restaurant Ordering System</p>
-                <h3 class="h3">Cariton</h3>
-                <p class="work-text">
-                  An online food ordering system for restaurants that streamlines menu browsing, checkout, and order handling while keeping the customer journey fast and familiar.
-                </p>
-                <ol class="work-technologies">
-                  <li>Bootstrap</li>
-                  <li>Python</li>
-                  <li>Django</li>
-                </ol>
-              </div>
-              <picture class="work-img">
-                <img loading="lazy" src="assets/images/works/cariton.png" alt="Cariton product preview" />
-              </picture>
-            </article>
-
-            <article class="work-box reveal">
-              <div class="work-textbox">
-                <p class="work-kicker">Lead Generation Website</p>
-                <h3 class="h3">MCM Plumbing and Gasfitting</h3>
-                <p class="work-text">
-                  A service-focused lead generation website for plumbing and hot water system installations, built to communicate trust quickly and drive inquiries.
-                </p>
-                <ol class="work-technologies">
-                  <li>WordPress</li>
-                  <li>Bootscore</li>
-                  <li>Responsive UI</li>
-                </ol>
-                <div class="work-links">
-                  <a href="https://www.mcmplumbing.com.au/rapid-x6/" target="_blank" rel="noopener" class="link">Visit Site</a>
-                </div>
-              </div>
-              <picture class="work-img">
-                <img loading="lazy" src="assets/images/works/mcm.png" alt="MCM Plumbing website preview" />
-              </picture>
-            </article>
-
-            <article class="work-box reveal">
-              <div class="work-textbox">
-                <p class="work-kicker">Gift Scheduling Platform</p>
-                <h3 class="h3">Cedule</h3>
-                <p class="work-text">
-                  A gift-scheduling platform that helps users plan occasions, organize contacts, manage wish lists, and automate reminders across important dates.
-                </p>
-                <ol class="work-technologies">
-                  <li>WordPress</li>
-                  <li>Bootscore</li>
-                  <li>Content Architecture</li>
-                </ol>
-              </div>
-              <picture class="work-img">
-                <img loading="lazy" src="assets/images/works/cedule.png" alt="Cedule website preview" />
-              </picture>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="skills">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Toolkit</p>
-            <h2 class="h2 h2--left">Core Skills</h2>
-          </div>
-
-          <div class="skill-groups">
-            <article class="skill-card reveal">
-              <h3>Frontend</h3>
-              <p>Vue.js, Nuxt.js, React, JavaScript (ES6+), HTML5, CSS3, SCSS, Tailwind CSS, Bootstrap</p>
-            </article>
-            <article class="skill-card reveal">
-              <h3>Engineering</h3>
-              <p>RESTful APIs, Git, Agile workflows, responsive design, accessible UI systems, performance optimization</p>
-            </article>
-            <article class="skill-card reveal">
-              <h3>Platform Knowledge</h3>
-              <p>SEO optimization, Core Web Vitals, WordPress, Python, Django, PHP, Java</p>
-            </article>
-          </div>
-
-          <div class="skills-imgs">
-            <img src="assets/images/skills/my_skills/html.png" alt="HTML" class="skills-img" loading="lazy" title="HTML" />
-            <img src="assets/images/skills/my_skills/css.png" alt="CSS" class="skills-img" loading="lazy" title="CSS" />
-            <img src="assets/images/skills/my_skills/scss.png" alt="SCSS" class="skills-img" loading="lazy" title="SCSS" />
-            <img src="assets/images/skills/my_skills/javascript.png" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript" />
-            <img src="assets/images/skills/my_skills/react.svg" alt="React" class="skills-img" loading="lazy" title="React" />
-            <img src="assets/images/skills/my_skills/vue.svg" alt="Vue.js" class="skills-img" loading="lazy" title="Vue.js" />
-            <img src="assets/images/skills/my_skills/nuxt.svg" alt="Nuxt.js" class="skills-img" loading="lazy" title="Nuxt.js" />
-            <img src="assets/images/skills/my_skills/tailwind.svg" alt="Tailwind CSS" class="skills-img" loading="lazy" title="Tailwind CSS" />
-            <img src="assets/images/skills/my_skills/bootstrap.png" alt="Bootstrap" class="skills-img" loading="lazy" title="Bootstrap" />
-            <img src="assets/images/skills/my_skills/jquery.png" alt="jQuery" class="skills-img" loading="lazy" title="jQuery" />
-            <img src="assets/images/skills/my_skills/responsive_design.svg" alt="Responsive Design" class="skills-img" loading="lazy" title="Responsive Design" />
-            <img src="assets/images/skills/my_skills/agile.png" alt="Agile" class="skills-img" loading="lazy" title="Agile" />
-            <img src="assets/images/skills/my_skills/wordpress.png" alt="WordPress" class="skills-img" loading="lazy" title="WordPress" />
-            <img src="assets/images/skills/my_skills/php.png" alt="PHP" class="skills-img" loading="lazy" title="PHP" />
-            <img src="assets/images/skills/my_skills/python.png" alt="Python" class="skills-img" loading="lazy" title="Python" />
-            <img src="assets/images/skills/my_skills/django.png" alt="Django" class="skills-img" loading="lazy" title="Django" />
-            <img src="assets/images/skills/my_skills/git.webp" alt="Git" class="skills-img" loading="lazy" title="Git" />
-            <img src="assets/images/skills/my_skills/github.svg" alt="GitHub" class="skills-img" loading="lazy" title="GitHub" />
-            <img src="assets/images/skills/my_skills/figma.png" alt="Figma" class="skills-img" loading="lazy" title="Figma" />
-            <img src="assets/images/skills/my_skills/mysql.png" alt="MySQL" class="skills-img" loading="lazy" title="MySQL" />
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="personal-projects">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Personal Projects</p>
-            <h2 class="h2 h2--left">Frontend utilities and product experiments</h2>
-          </div>
-
-          <div class="project-grid">
-            <article class="project-card reveal">
-              <img
-                src="assets/images/personal-projects/custom-movies.png"
-                alt="Custom Movie App screenshot"
-                class="project-card__image"
-                loading="lazy"
-              />
-              <p class="project-card__eyebrow">Vanilla JavaScript</p>
-              <h3 class="h3">Custom Movie App</h3>
-              <p class="project-card__text">
-                A frontend movie discovery app built around TMDb data, with category switching, search, responsive cards, and an accessible details modal.
-              </p>
-              <ul class="project-tags">
-                <li>JavaScript</li>
-                <li>TMDb API</li>
-                <li>Responsive UI</li>
-              </ul>
-              <div class="project-links">
-                <a
-                  href="https://custom-movies.netlify.app"
-                  target="_blank"
-                  rel="noopener"
-                  class="link"
-                >Live Site</a>
-                <a
-                  href="https://github.com/kentlevi/custom-movie-app"
-                  target="_blank"
-                  rel="noopener"
-                  class="link"
-                >View Repository</a>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <img
-                src="assets/images/personal-projects/pixel-squeeze.png"
-                alt="Image Compressor screenshot"
-                class="project-card__image"
-                loading="lazy"
-              />
-              <p class="project-card__eyebrow">Browser Tool</p>
-              <h3 class="h3">Image Compressor</h3>
-              <p class="project-card__text">
-                A client-side batch image compressor with drag-and-drop uploads, folder handling, ZIP download support, and SCSS-based UI workflow.
-              </p>
-              <ul class="project-tags">
-                <li>Canvas API</li>
-                <li>Batch Processing</li>
-                <li>SCSS</li>
-              </ul>
-              <div class="project-links">
-                <a
-                  href="https://pixel-squeeze.netlify.app"
-                  target="_blank"
-                  rel="noopener"
-                  class="link"
-                >Live Site</a>
-                <a
-                  href="https://github.com/kentlevi/image-compressor"
-                  target="_blank"
-                  rel="noopener"
-                  class="link"
-                >View Repository</a>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <img
-                src="assets/images/personal-projects/pixel-morph.png"
-                alt="Image Converter screenshot"
-                class="project-card__image"
-                loading="lazy"
-              />
-              <p class="project-card__eyebrow">Browser Tool</p>
-              <h3 class="h3">Image Converter</h3>
-              <p class="project-card__text">
-                A local image conversion utility that transforms batches into WebP, JPG, PNG, or AVIF with quality control, progress-safe processing, and ZIP export.
-              </p>
-              <ul class="project-tags">
-                <li>Format Conversion</li>
-                <li>JSZip</li>
-                <li>Frontend UX</li>
-              </ul>
-              <div class="project-links">
-                <a
-                  href="https://pixel-morph.netlify.app"
-                  target="_blank"
-                  rel="noopener"
-                  class="link"
-                >Live Site</a>
-                <a
-                  href="https://github.com/kentlevi/image-converter"
-                  target="_blank"
-                  rel="noopener"
-                  class="link"
-                >View Repository</a>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <img
-                src="assets/images/personal-projects/musticker-design-system.png.png"
-                alt="Musticker frontend design system screenshot"
-                class="project-card__image"
-                loading="lazy"
-              />
-              <p class="project-card__eyebrow">Design System</p>
-              <h3 class="h3">Musticker Frontend Design System</h3>
-              <p class="project-card__text">
-                A Nuxt-based frontend design system project focused on reusable UI patterns, layout consistency, and faster product interface development.
-              </p>
-              <ul class="project-tags">
-                <li>Nuxt</li>
-                <li>Design System</li>
-                <li>Reusable Components</li>
-              </ul>
-              <div class="project-links">
-                <a
-                  href="https://musticker-frontend-design-system.netlify.app"
-                  target="_blank"
-                  rel="noopener"
-                  class="link"
-                >Live Site</a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section contact" id="contact">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Contact</p>
-            <h2 class="h2 h2--left">Open to frontend roles and project work</h2>
-          </div>
-
-          <div class="contact-content">
-            <div class="contact-textbox">
-              <strong class="hire-alert">
-                <span class="indicator"></span>
-                Available for hire
-              </strong>
-              <p class="contact-text">
-                I build responsive interfaces, performance-focused pages, and SEO-aware frontend systems for teams that care about quality delivery. My strongest fit is frontend product work where UX, speed, and maintainability are all part of the brief.
-              </p>
-              <p class="contact-text">
-                Based in Cebu City, Philippines. Available for frontend development, product UI implementation, and web performance-focused work.
-              </p>
-            </div>
-
-            <div class="contact-form">
-              <div class="form-field">
-                <label>Name</label>
-                <input type="text" readonly value="Kent Levi L. Cadungog" />
-              </div>
-              <div class="form-field">
-                <label>Location</label>
-                <input type="text" readonly value="Cebu City, Philippines" />
-              </div>
-              <div class="form-field">
-                <label>Email</label>
-                <input type="text" readonly value="kentlevicadungog@gmail.com" />
-              </div>
-              <div class="form-field">
-                <label>Phone</label>
-                <input type="text" readonly value="+63 956 291 0509" />
-              </div>
-              <div class="form-field">
-                <label>Education</label>
-                <input type="text" readonly value="BS in Information Technology, Cebu Technological University" />
-              </div>
+          <div class="profile-card profile-card--compact">
+            <p class="profile-card__label">Strengths</p>
+            <div class="profile-tags">
+              <span>Responsive UI</span>
+              <span>Accessibility</span>
+              <span>REST APIs</span>
+              <span>Performance</span>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container footer-content">
-        <p class="footer-text">
-          <span></span> Kent Levi Cadungog. Frontend developer focused on SEO, responsive UI, and performance-driven web experiences.
-        </p>
-        <label class="theme-switch" for="theme-switch">
-          <span>Dark Theme</span>
-          <input type="checkbox" id="theme-switch" role="switch" />
-        </label>
+        </aside>
       </div>
-    </footer>
-  </body>
+    </section>
+
+    <section class="section section--tight" id="about">
+      <div class="container section-grid">
+        <div class="section-heading">
+          <p class="eyebrow">Profile</p>
+          <h2 class="h2 h2--left">Frontend Developer | Software Developer</h2>
+        </div>
+
+        <div class="prose">
+          <p>
+            Frontend-focused Software Developer with 4+ years of experience building high-performance, SEO-optimized web
+            applications. Strong expertise in Vue.js, Nuxt.js, and React, with hands-on experience integrating RESTful
+            APIs and optimizing Core Web Vitals including LCP, CLS, and INP.
+          </p>
+          <p>
+            I focus on accessible, responsive UI development with a pragmatic engineering mindset. My work spans
+            marketing sites, e-commerce, scheduling platforms, and internal product interfaces where speed,
+            maintainability, and visibility all matter.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Career Timeline</p>
+          <h2 class="h2 h2--left">Professional Experience</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <p>Apr 2025 - Present</p>
+              <span>Cebu City, Philippines</span>
+            </div>
+            <div class="timeline-card">
+              <h3 class="h3">Frontend Developer</h3>
+              <p class="timeline-company">Glophics Web Design &amp; Advertising Inc.</p>
+              <ul class="timeline-points">
+                <li>Optimized asset caching and delivery strategies to reduce unnecessary S3 origin requests and lower
+                  monthly cloud infrastructure costs.</li>
+                <li>Improved Core Web Vitals including LCP, CLS, INP, and FCP to deliver faster load times, better
+                  responsiveness, and stronger visual stability.</li>
+                <li>Designed a modular component-based frontend architecture that improved maintainability, scalability,
+                  and long-term product sustainability.</li>
+                <li>Led frontend development for Musticker from scratch, modernizing the platform structure and adding
+                  multilingual support for English and Korean.</li>
+                <li>Maintained and updated a network of seven regional sticker printing storefronts with shared frontend
+                  patterns, campaign banners, and localized content.</li>
+                <li>Refactored styling systems, improved project structure, and introduced reusable components and
+                  utilities to reduce technical debt and speed up development.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <p>Jan 2023 - Apr 2025</p>
+              <span>Cebu, Philippines - Remote</span>
+            </div>
+            <div class="timeline-card">
+              <h3 class="h3">Frontend Developer</h3>
+              <p class="timeline-company">Dinnox IT Solutions</p>
+              <ul class="timeline-points">
+                <li>Developed and optimized high-performance frontend interfaces.</li>
+                <li>Integrated RESTful APIs with backend services.</li>
+                <li>Improved code maintainability using modern frontend practices.</li>
+                <li>Enhanced accessibility, responsiveness, and UI consistency.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <p>Nov 2021 - Jan 2023</p>
+              <span>Australia - Remote</span>
+            </div>
+            <div class="timeline-card">
+              <h3 class="h3">Software Developer</h3>
+              <p class="timeline-company">The Little Ripple Company Pty Ltd</p>
+              <ul class="timeline-points">
+                <li>Developed software solutions for e-commerce, scheduling, and automation.</li>
+                <li>Improved platform stability through testing and debugging.</li>
+                <li>Assisted in designing scalable and maintainable system architectures.</li>
+                <li>Supported customized websites and landing pages that improved user engagement.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2 class="h2 h2--left">Projects and Product Work</h2>
+          <p class="section-lead">
+            A mix of production websites and product-focused builds where I worked on interface quality, responsive
+            implementation, and experience-driven delivery.
+          </p>
+        </div>
+
+        <div class="work-boxes">
+          <article class="work-box reveal">
+            <div class="work-textbox">
+              <p class="work-kicker">Ongoing Product Build</p>
+              <h3 class="h3">Musticker US</h3>
+              <p class="work-text">
+                A new sticker commerce platform currently in production, where I am building the frontend from scratch
+                as the primary frontend developer. The project modernizes the older sticker storefront pattern with an
+                upgraded stack, cleaner component structure, and multilingual support currently focused on English and
+                Korean.
+              </p>
+              <ol class="work-technologies">
+                <li>Vue.js</li>
+                <li>Nuxt.js</li>
+                <li>Multilingual UI</li>
+                <li>Frontend Architecture</li>
+              </ol>
+              <div class="work-links">
+                <a href="https://musticker.com/us" target="_blank" rel="noopener" class="link">Project Link</a>
+              </div>
+            </div>
+            <div class="work-img work-img--summary work-img--summary-alt" aria-label="Musticker US project summary">
+              <div class="work-summary">
+                <span class="work-summary__label">From Scratch Build</span>
+                <strong>EN + KR</strong>
+                <p>New multilingual storefront architecture built on an upgraded frontend stack and still actively in
+                  production.</p>
+                <ul class="work-summary__list">
+                  <li>Main frontend developer</li>
+                  <li>Modernized sticker storefront foundation</li>
+                  <li>English and Korean rollout in progress</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-box reveal">
+            <div class="work-textbox">
+              <p class="work-kicker">Multi-market E-commerce Maintenance</p>
+              <h3 class="h3">Sticker Printing Storefront Network</h3>
+              <p class="work-text">
+                An ongoing maintenance and frontend support role across seven related sticker printing storefronts,
+                where I handle campaign updates, banner rollouts, responsive fixes, merchandising UI, and consistency
+                across localized market sites.
+              </p>
+              <ol class="work-technologies">
+                <li>Vue.js</li>
+                <li>Nuxt.js</li>
+                <li>SEO Metadata</li>
+                <li>Maintenance</li>
+              </ol>
+              <div class="work-links">
+                <a href="https://www.allstickerprinting.com/" target="_blank" rel="noopener" class="link">All Sticker
+                  Printing</a>
+                <a href="https://www.ozstickerprinting.com/" target="_blank" rel="noopener" class="link">OZ Sticker
+                  Printing</a>
+                <a href="https://www.stickerdot.co.nz/" target="_blank" rel="noopener" class="link">StickerDot NZ</a>
+                <a href="https://www.stickermarket.co.uk/" target="_blank" rel="noopener" class="link">Sticker Market
+                  UK</a>
+                <a href="https://www.stickercanada.com/" target="_blank" rel="noopener" class="link">Sticker Canada</a>
+                <a href="https://www.singaprinting.com/" target="_blank" rel="noopener" class="link">Singa Printing</a>
+                <a href="https://www.stickerjapan.com/" target="_blank" rel="noopener" class="link">Sticker Japan</a>
+              </div>
+            </div>
+            <div class="work-img work-img--summary" aria-label="Sticker storefront network summary">
+              <div class="work-summary">
+                <span class="work-summary__label">Current Product Group</span>
+                <strong>7 live storefronts</strong>
+                <p>Regional sticker printing sites maintained under one frontend support workflow.</p>
+                <ul class="work-summary__list">
+                  <li>Promotional banners and site updates</li>
+                  <li>Localized storefront consistency</li>
+                  <li>SEO-aware frontend maintenance</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-box reveal">
+            <div class="work-textbox">
+              <p class="work-kicker">Digital Learning Platform</p>
+              <h3 class="h3">Kabrita</h3>
+              <p class="work-text">
+                A digital learning platform designed to support remote education with structured course content, guided
+                learning flows, and a clearer interface for students, educators, and content delivery.
+              </p>
+              <ol class="work-technologies">
+                <li>Bootstrap</li>
+                <li>Python</li>
+                <li>Django</li>
+              </ol>
+            </div>
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/works/kabrita.png" alt="Kabrita website preview" />
+            </picture>
+          </article>
+
+          <article class="work-box reveal">
+            <div class="work-textbox">
+              <p class="work-kicker">Restaurant Ordering System</p>
+              <h3 class="h3">Cariton</h3>
+              <p class="work-text">
+                A scalable restaurant management solution built to digitize food service operations through centralized
+                order handling, smoother kitchen coordination, and more efficient real-time workflows. It reduces order
+                errors, communication delays, and manual friction while improving speed, usability, and overall service
+                quality.
+              </p>
+              <ol class="work-technologies">
+                <li>Bootstrap</li>
+                <li>Python</li>
+                <li>Django</li>
+              </ol>
+            </div>
+            <div class="work-img work-img--summary work-img--summary-warm" aria-label="Cariton project summary">
+              <div class="work-summary">
+                <span class="work-summary__label">Operations Platform</span>
+                <strong>Real-time service flow</strong>
+                <p>Restaurant operations made clearer through centralized ordering, kitchen coordination, and reduced
+                  manual friction.</p>
+                <ul class="work-summary__list">
+                  <li>Centralized order handling</li>
+                  <li>Faster kitchen coordination</li>
+                  <li>Usability and service efficiency focus</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-box reveal">
+            <div class="work-textbox">
+              <p class="work-kicker">Lead Generation Website</p>
+              <h3 class="h3">MCM Plumbing and Gasfitting</h3>
+              <p class="work-text">
+                A service-led marketing website for plumbing and hot water installations, built to communicate trust
+                quickly, surface key services clearly, and convert visits into qualified inquiries.
+              </p>
+              <ol class="work-technologies">
+                <li>WordPress</li>
+                <li>Bootscore</li>
+                <li>Responsive UI</li>
+              </ol>
+              <div class="work-links">
+                <a href="https://www.mcmplumbing.com.au/rapid-x6/" target="_blank" rel="noopener" class="link">Visit
+                  Site</a>
+              </div>
+            </div>
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/works/mcm.png" alt="MCM Plumbing website preview" />
+            </picture>
+          </article>
+
+          <article class="work-box reveal">
+            <div class="work-textbox">
+              <p class="work-kicker">Gift Scheduling Platform</p>
+              <h3 class="h3">Cedule</h3>
+              <p class="work-text">
+                A gift scheduling platform that helps users plan occasions, organize contacts, manage wish lists, and
+                stay on top of important dates through reminder-driven workflows.
+              </p>
+              <ol class="work-technologies">
+                <li>Django</li>
+                <li>Bootstrap</li>
+                <li>Content Architecture</li>
+              </ol>
+            </div>
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/works/cedule.png" alt="Cedule website preview" />
+            </picture>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Toolkit</p>
+          <h2 class="h2 h2--left">Core Skills</h2>
+        </div>
+
+        <div class="skill-groups">
+          <article class="skill-card reveal">
+            <h3>Frontend</h3>
+            <p>Vue.js, Nuxt.js, React, JavaScript (ES6+), HTML5, CSS3, SCSS, Tailwind CSS, Bootstrap</p>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Engineering</h3>
+            <p>RESTful APIs, Git, Agile workflows, responsive design, accessible UI systems, performance optimization
+            </p>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Platform Knowledge</h3>
+            <p>SEO optimization, Core Web Vitals, WordPress, Python, Django, PHP, Java</p>
+          </article>
+        </div>
+
+        <div class="skills-imgs">
+          <img src="assets/images/skills/my_skills/html.png" alt="HTML" class="skills-img" loading="lazy"
+            title="HTML" />
+          <img src="assets/images/skills/my_skills/css.png" alt="CSS" class="skills-img" loading="lazy" title="CSS" />
+          <img src="assets/images/skills/my_skills/scss.png" alt="SCSS" class="skills-img" loading="lazy"
+            title="SCSS" />
+          <img src="assets/images/skills/my_skills/javascript.png" alt="JavaScript" class="skills-img" loading="lazy"
+            title="JavaScript" />
+          <img src="assets/images/skills/my_skills/react.svg" alt="React" class="skills-img" loading="lazy"
+            title="React" />
+          <img src="assets/images/skills/my_skills/vue.svg" alt="Vue.js" class="skills-img" loading="lazy"
+            title="Vue.js" />
+          <img src="assets/images/skills/my_skills/nuxt.svg" alt="Nuxt.js" class="skills-img" loading="lazy"
+            title="Nuxt.js" />
+          <img src="assets/images/skills/my_skills/tailwind.svg" alt="Tailwind CSS" class="skills-img" loading="lazy"
+            title="Tailwind CSS" />
+          <img src="assets/images/skills/my_skills/bootstrap.png" alt="Bootstrap" class="skills-img" loading="lazy"
+            title="Bootstrap" />
+          <img src="assets/images/skills/my_skills/jquery.png" alt="jQuery" class="skills-img" loading="lazy"
+            title="jQuery" />
+          <img src="assets/images/skills/my_skills/responsive_design.svg" alt="Responsive Design" class="skills-img"
+            loading="lazy" title="Responsive Design" />
+          <img src="assets/images/skills/my_skills/agile.png" alt="Agile" class="skills-img" loading="lazy"
+            title="Agile" />
+          <img src="assets/images/skills/my_skills/wordpress.png" alt="WordPress" class="skills-img" loading="lazy"
+            title="WordPress" />
+          <img src="assets/images/skills/my_skills/php.png" alt="PHP" class="skills-img" loading="lazy" title="PHP" />
+          <img src="assets/images/skills/my_skills/python.png" alt="Python" class="skills-img" loading="lazy"
+            title="Python" />
+          <img src="assets/images/skills/my_skills/django.png" alt="Django" class="skills-img" loading="lazy"
+            title="Django" />
+          <img src="assets/images/skills/my_skills/git.webp" alt="Git" class="skills-img" loading="lazy" title="Git" />
+          <img src="assets/images/skills/my_skills/github.svg" alt="GitHub" class="skills-img" loading="lazy"
+            title="GitHub" />
+          <img src="assets/images/skills/my_skills/figma.png" alt="Figma" class="skills-img" loading="lazy"
+            title="Figma" />
+          <img src="assets/images/skills/my_skills/mysql.png" alt="MySQL" class="skills-img" loading="lazy"
+            title="MySQL" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="personal-projects">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Personal Projects</p>
+          <h2 class="h2 h2--left">Frontend utilities and product experiments</h2>
+        </div>
+
+        <div class="project-carousel">
+          <div class="project-carousel-head">
+            <p class="project-carousel-copy">A focused set of browser tools and frontend product builds designed around
+              utility, responsiveness, and clear UX.</p>
+            <div class="project-carousel-controls">
+              <button type="button" class="project-carousel-btn" data-carousel="prev"
+                aria-label="Show previous projects">Prev</button>
+              <button type="button" class="project-carousel-btn" data-carousel="next"
+                aria-label="Show next projects">Next</button>
+            </div>
+          </div>
+
+          <div class="project-carousel-viewport">
+            <div class="project-grid">
+              <article class="project-card reveal">
+                <img src="assets/images/personal-projects/musticker-design-system.png.png"
+                  alt="Musticker frontend design system screenshot" class="project-card__image" loading="lazy" />
+                <p class="project-card__eyebrow">Design System</p>
+                <h3 class="h3">Musticker Frontend Design System</h3>
+                <p class="project-card__text">
+                  A Nuxt-based frontend design system project focused on reusable UI patterns, layout consistency, and
+                  faster product interface development.
+                </p>
+                <ul class="project-tags">
+                  <li>Nuxt</li>
+                  <li>Design System</li>
+                  <li>Reusable Components</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://musticker-frontend-design-system.netlify.app" target="_blank" rel="noopener"
+                    class="link">Live Site</a>
+                </div>
+              </article>
+
+
+              <article class="project-card reveal">
+                <img src="assets/images/personal-projects/pixel-squeeze.png" alt="Image Compressor screenshot"
+                  class="project-card__image" loading="lazy" />
+                <p class="project-card__eyebrow">Browser Tool</p>
+                <h3 class="h3">Image Compressor</h3>
+                <p class="project-card__text">
+                  A client-side batch image compressor with drag-and-drop uploads, folder handling, ZIP download
+                  support, and SCSS-based UI workflow.
+                </p>
+                <ul class="project-tags">
+                  <li>Canvas API</li>
+                  <li>Batch Processing</li>
+                  <li>SCSS</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://pixel-squeeze.netlify.app" target="_blank" rel="noopener" class="link">Live Site</a>
+                  <a href="https://github.com/kentlevi/image-compressor" target="_blank" rel="noopener"
+                    class="link">View Repository</a>
+                </div>
+              </article>
+
+              <article class="project-card reveal">
+                <img src="assets/images/personal-projects/pixel-morph.png" alt="Image Converter screenshot"
+                  class="project-card__image" loading="lazy" />
+                <p class="project-card__eyebrow">Browser Tool</p>
+                <h3 class="h3">Image Converter</h3>
+                <p class="project-card__text">
+                  A local image conversion utility that transforms batches into WebP, JPG, PNG, or AVIF with quality
+                  control, progress-safe processing, and ZIP export.
+                </p>
+                <ul class="project-tags">
+                  <li>Format Conversion</li>
+                  <li>JSZip</li>
+                  <li>Frontend UX</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://pixel-morph.netlify.app" target="_blank" rel="noopener" class="link">Live Site</a>
+                  <a href="https://github.com/kentlevi/image-converter" target="_blank" rel="noopener" class="link">View
+                    Repository</a>
+                </div>
+              </article>
+
+              <article class="project-card reveal">
+                <img src="assets/images/personal-projects/pixel-cutout.png" alt="Pixel Cutout screenshot"
+                  class="project-card__image" loading="lazy" />
+                <p class="project-card__eyebrow">Browser Tool</p>
+                <h3 class="h3">Image Background Remover</h3>
+                <p class="project-card__text">
+                  A browser-based background removal tool with side-by-side original and result preview, transparent PNG
+                  export, and a focused utility-first interface.
+                </p>
+                <ul class="project-tags">
+                  <li>Background Removal</li>
+                  <li>PNG Export</li>
+                  <li>Tool UI</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://pixel-cutout.netlify.app/" target="_blank" rel="noopener" class="link">Live Site</a>
+                  <a href="https://github.com/kentlevi/image-remove-bg" target="_blank" rel="noopener" class="link">View
+                    Repository</a>
+                </div>
+              </article>
+              <article class="project-card reveal">
+                <img src="assets/images/personal-projects/custom-movies.png" alt="Custom Movie App screenshot"
+                  class="project-card__image" loading="lazy" />
+                <p class="project-card__eyebrow">Vanilla JavaScript</p>
+                <h3 class="h3">Custom Movie App</h3>
+                <p class="project-card__text">
+                  A frontend movie discovery app built around TMDb data, with category switching, search, responsive
+                  cards, and an accessible details modal.
+                </p>
+                <ul class="project-tags">
+                  <li>JavaScript</li>
+                  <li>TMDb API</li>
+                  <li>Responsive UI</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://custom-movies.netlify.app" target="_blank" rel="noopener" class="link">Live Site</a>
+                  <a href="https://github.com/kentlevi/custom-movie-app" target="_blank" rel="noopener"
+                    class="link">View Repository</a>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2 class="h2 h2--left">Open to frontend roles and project work</h2>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-textbox">
+            <strong class="hire-alert">
+              <span class="indicator"></span>
+              Available for hire
+            </strong>
+            <p class="contact-text">
+              I build responsive interfaces, performance-focused pages, and SEO-aware frontend systems for teams that
+              care about quality delivery. My strongest fit is frontend product work where UX, speed, and
+              maintainability are all part of the brief.
+            </p>
+            <p class="contact-text">
+              Based in Cebu City, Philippines. Available for frontend development, product UI implementation, and web
+              performance-focused work.
+            </p>
+          </div>
+
+          <div class="contact-form">
+            <div class="form-field">
+              <label>Name</label>
+              <input type="text" readonly value="Kent Levi L. Cadungog" />
+            </div>
+            <div class="form-field">
+              <label>Location</label>
+              <input type="text" readonly value="Cebu City, Philippines" />
+            </div>
+            <div class="form-field">
+              <label>Email</label>
+              <input type="text" readonly value="kentlevicadungog@gmail.com" />
+            </div>
+            <div class="form-field">
+              <label>Phone</label>
+              <input type="text" readonly value="+63 956 291 0509" />
+            </div>
+            <div class="form-field">
+              <label>Education</label>
+              <input type="text" readonly value="BS in Information Technology, Cebu Technological University - Ginatilan" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="footer-text">
+        <span></span> Kent Levi Cadungog. Frontend developer focused on SEO, responsive UI, and performance-driven web
+        experiences.
+      </p>
+      <label class="theme-switch" for="theme-switch">
+        <span>Dark Theme</span>
+        <input type="checkbox" id="theme-switch" role="switch" />
+      </label>
+    </div>
+  </footer>
+</body>
+
 </html>
