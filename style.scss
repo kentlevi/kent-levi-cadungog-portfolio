@@ -326,6 +326,18 @@ body.light .hero-panel {
     linear-gradient(180deg, rgba(244, 251, 252, 0.98), rgba(228, 241, 245, 0.96));
 }
 
+body.light .hero-copy {
+  background:
+    radial-gradient(circle at top left, rgba(74, 205, 182, 0.12), transparent 24%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(239, 247, 249, 0.94));
+}
+
+body.light .hero-panel {
+  background:
+    radial-gradient(circle at top left, rgba(74, 205, 182, 0.12), transparent 24%),
+    linear-gradient(180deg, rgba(250, 253, 254, 0.95), rgba(236, 245, 248, 0.94));
+}
+
 .hero-copy::before,
 .hero-panel::before {
   content: "";
@@ -778,6 +790,7 @@ body.light .profile-card--accent {
   place-items: stretch;
   min-height: 100%;
   padding: 0;
+  border-color: rgba(196, 34, 61, 0.24);
   background:
     radial-gradient(circle at top right, rgba(255, 255, 255, 0.08), transparent 28%),
     linear-gradient(145deg, rgba(196, 34, 61, 0.9), rgba(124, 25, 39, 0.96));
@@ -788,33 +801,17 @@ body.light .profile-card--accent {
 }
 
 .work-img--summary-alt {
+  border-color: rgba(9, 128, 115, 0.24);
   background:
     radial-gradient(circle at top right, rgba(255, 255, 255, 0.12), transparent 30%),
     linear-gradient(145deg, rgba(9, 128, 115, 0.94), rgba(14, 49, 72, 0.96));
 }
 
 .work-img--summary-warm {
+  border-color: rgba(240, 138, 75, 0.28);
   background:
     radial-gradient(circle at top right, rgba(255, 255, 255, 0.14), transparent 30%),
-    linear-gradient(145deg, rgba(176, 74, 104, 0.94), rgba(118, 29, 74, 0.96));
-}
-
-body.light .work-img--summary {
-  background:
-    radial-gradient(circle at top right, rgba(255, 255, 255, 0.76), transparent 26%),
-    linear-gradient(145deg, #ff8ba0, #d24d68);
-}
-
-body.light .work-img--summary-alt {
-  background:
-    radial-gradient(circle at top right, rgba(255, 255, 255, 0.72), transparent 26%),
-    linear-gradient(145deg, #34c8b2, #147a86);
-}
-
-body.light .work-img--summary-warm {
-  background:
-    radial-gradient(circle at top right, rgba(255, 255, 255, 0.74), transparent 26%),
-    linear-gradient(145deg, #ffb86b, #f08a4b);
+    linear-gradient(145deg, rgba(255, 184, 107, 0.96), rgba(240, 138, 75, 0.98));
 }
 
 body.light .work-img::after {

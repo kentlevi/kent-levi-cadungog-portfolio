@@ -94,11 +94,10 @@ if (projectCarousel && projectCarouselPrev && projectCarouselNext) {
 
     const gap = 18;
     const cardWidth = firstCard.getBoundingClientRect().width + gap;
-    const cardCount = projectCarousel.querySelectorAll(".project-card").length;
-    const maxIndex = Math.max(0, cardCount - 1);
     const currentIndex = Math.round(projectCarousel.scrollLeft / cardWidth);
+    const maxScrollLeft = Math.max(0, projectCarousel.scrollWidth - projectCarousel.clientWidth);
 
-    return { cardWidth, maxIndex, currentIndex };
+    return { cardWidth, currentIndex, maxScrollLeft };
   };
 
   const scrollProjects = (direction) => {
@@ -107,19 +106,20 @@ if (projectCarousel && projectCarouselPrev && projectCarouselNext) {
       return;
     }
 
-    const { cardWidth, maxIndex, currentIndex } = metrics;
+    const { cardWidth, currentIndex, maxScrollLeft } = metrics;
     let nextIndex = currentIndex + direction;
+    let nextScrollLeft = cardWidth * nextIndex;
 
-    if (nextIndex > maxIndex) {
-      nextIndex = 0;
+    if (direction > 0 && projectCarousel.scrollLeft >= maxScrollLeft - 4) {
+      nextScrollLeft = 0;
     }
 
-    if (nextIndex < 0) {
-      nextIndex = maxIndex;
+    if (direction < 0 && projectCarousel.scrollLeft <= 4) {
+      nextScrollLeft = maxScrollLeft;
     }
 
     projectCarousel.scrollTo({
-      left: cardWidth * nextIndex,
+      left: Math.max(0, Math.min(nextScrollLeft, maxScrollLeft)),
       behavior: "smooth",
     });
   };
